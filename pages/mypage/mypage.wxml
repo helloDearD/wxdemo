@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="mypage">
+ <text>{{name}}</text>
+</view>
+<view class="mypage">
+ <text>{{name}}</text>
+</view>
+<wxs module="m">
+var name = "hellow"
+module.exports.msg = name
+</wxs>
+<view>{{m.msg}}</view>
